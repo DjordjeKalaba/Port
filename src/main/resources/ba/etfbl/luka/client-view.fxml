@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="700.0"
+            prefWidth="1000.0"
+            stylesheets="@client.css"
+            styleClass="client-root"
+            xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ba.etfbl.luka.ClientController">
+
+    <top>
+        <VBox spacing="10.0" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="12.0" left="16.0" right="16.0" top="16.0"/>
+            </padding>
+            <Label styleClass="screen-title" text="Korisnicki dio - simulacija"/>
+            <HBox alignment="CENTER_LEFT" spacing="10.0">
+                <Label text="Minimalno plovila po terminalu"/>
+                <Spinner fx:id="minimumVesselsSpinner" prefWidth="90.0"/>
+                <Button fx:id="startButton" onAction="#startSimulation" text="Pokreni simulaciju"/>
+                <Label text="Terminal"/>
+                <ComboBox fx:id="terminalCombo" prefWidth="210.0"/>
+                <Label fx:id="statusLabel" text=""/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="10.0">
+                <Label text="Novo plovilo"/>
+                <ComboBox fx:id="addTypeCombo" prefWidth="210.0"/>
+                <Button fx:id="addVesselButton" onAction="#addVesselDuringSimulation" text="Dodaj u luku"/>
+                <Button onAction="#exportTaxes" text="Preuzmi CSV takse"/>
+                <Button onAction="#exportEntries" text="Preuzmi CSV ulaske"/>
+                <Button onAction="#showInvestigations" text="Pregled uvidjaja"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="8.0">
+                <Label styleClass="legend-title" text="Legenda"/>
+                <Label styleClass="legend-empty" text="slobodan vez"/>
+                <Label styleClass="legend-container" text="K kontejnerski"/>
+                <Label styleClass="legend-cruise" text="P putnicki"/>
+                <Label styleClass="legend-tanker" text="T tanker"/>
+                <Label styleClass="legend-government" text="C/OS/V sluzbe"/>
+                <Label styleClass="legend-entering" text="ulaz"/>
+                <Label styleClass="legend-leaving" text="izlaz"/>
+                <Label styleClass="legend-responding" text="intervencija"/>
+            </HBox>
+        </VBox>
+    </top>
+
+    <center>
+        <ScrollPane fitToWidth="true" BorderPane.alignment="CENTER">
+            <content>
+                <VBox spacing="12.0">
+                    <padding>
+                        <Insets bottom="16.0" left="16.0" right="16.0" top="16.0"/>
+                    </padding>
+                    <HBox alignment="TOP_LEFT" spacing="16.0">
+                        <GridPane fx:id="terminalGrid" hgap="5.0" vgap="5.0"/>
+                        <VBox minWidth="240.0" prefWidth="260.0" spacing="10.0" styleClass="details-panel">
+                            <Label styleClass="panel-title" text="Detalji plovila"/>
+                            <ImageView fx:id="vesselImageView"
+                                       fitHeight="130.0"
+                                       fitWidth="180.0"
+                                       preserveRatio="true"
+                                       smooth="true"/>
+                            <Label fx:id="vesselDetailsLabel"
+                                   text="Klikni na plovilo za detalje."
+                                   wrapText="true"/>
+                        </VBox>
+                    </HBox>
+                    <TextArea fx:id="eventsArea" editable="false" prefRowCount="9" wrapText="true"/>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>

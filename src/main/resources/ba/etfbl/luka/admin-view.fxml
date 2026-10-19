@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="650.0"
+            prefWidth="1000.0"
+            xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ba.etfbl.luka.AdminController">
+
+    <top>
+        <VBox spacing="10.0" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="12.0" left="16.0" right="16.0" top="16.0"/>
+            </padding>
+            <Label style="-fx-font-size: 22px; -fx-font-weight: bold;" text="Administratorski dio - Luka"/>
+            <HBox alignment="CENTER_LEFT" spacing="10.0">
+                <Label text="Terminal"/>
+                <ComboBox fx:id="terminalCombo" prefWidth="220.0"/>
+                <Label fx:id="freeDocksLabel" text="Slobodnih vezova: 0"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" spacing="10.0">
+                <Label text="Tip plovila"/>
+                <ComboBox fx:id="vesselTypeCombo" prefWidth="220.0"/>
+                <Button onAction="#addVessel" text="Dodaj"/>
+                <Button fx:id="editButton" disable="true" onAction="#editVessel" text="Izmijeni"/>
+                <Button fx:id="deleteButton" disable="true" onAction="#deleteVessel" text="Obrisi"/>
+                <Button onAction="#openClientApplication" text="Pokreni korisnicki dio"/>
+            </HBox>
+        </VBox>
+    </top>
+
+    <center>
+        <TableView fx:id="vesselsTable" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="160.0" text="Naziv"/>
+                <TableColumn fx:id="typeColumn" prefWidth="160.0" text="Tip"/>
+                <TableColumn fx:id="imoColumn" prefWidth="120.0" text="IMO"/>
+                <TableColumn fx:id="institutionColumn" prefWidth="140.0" text="Institucija"/>
+                <TableColumn fx:id="registrationColumn" prefWidth="140.0" text="Registracija"/>
+                <TableColumn fx:id="enteredColumn" prefWidth="150.0" text="Vrijeme ulaska"/>
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>

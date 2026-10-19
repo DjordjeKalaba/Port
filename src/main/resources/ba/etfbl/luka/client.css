@@ -1,0 +1,213 @@
+.client-root {
+    -fx-background-color: #f4f7fb;
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.screen-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #172033;
+}
+
+.legend-title {
+    -fx-font-weight: 700;
+    -fx-text-fill: #172033;
+}
+
+.legend-empty,
+.legend-container,
+.legend-cruise,
+.legend-tanker,
+.legend-government,
+.legend-entering,
+.legend-leaving,
+.legend-responding {
+    -fx-padding: 4 8 4 8;
+    -fx-background-radius: 4;
+    -fx-border-radius: 4;
+    -fx-border-width: 1;
+    -fx-font-size: 12px;
+    -fx-font-weight: 700;
+}
+
+.legend-empty {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cbd5e1;
+    -fx-text-fill: #475569;
+}
+
+.legend-container {
+    -fx-background-color: #d9f4f2;
+    -fx-border-color: #14b8a6;
+    -fx-text-fill: #115e59;
+}
+
+.legend-cruise {
+    -fx-background-color: #f3e8ff;
+    -fx-border-color: #a855f7;
+    -fx-text-fill: #6b21a8;
+}
+
+.legend-tanker {
+    -fx-background-color: #fff1d6;
+    -fx-border-color: #f59e0b;
+    -fx-text-fill: #92400e;
+}
+
+.legend-government {
+    -fx-background-color: #fee2e2;
+    -fx-border-color: #ef4444;
+    -fx-text-fill: #991b1b;
+}
+
+.legend-entering {
+    -fx-background-color: #dcfce7;
+    -fx-border-color: #22c55e;
+    -fx-text-fill: #166534;
+}
+
+.legend-leaving {
+    -fx-background-color: #fee2e2;
+    -fx-border-color: #ef4444;
+    -fx-text-fill: #991b1b;
+}
+
+.legend-responding {
+    -fx-background-color: #ffedd5;
+    -fx-border-color: #f97316;
+    -fx-text-fill: #9a3412;
+}
+
+.terminal-cell {
+    -fx-border-color: #94a3b8;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-font-weight: 700;
+    -fx-font-size: 12px;
+    -fx-text-alignment: center;
+}
+
+.terminal-header {
+    -fx-background-color: #26364f;
+    -fx-border-color: #26364f;
+    -fx-text-fill: white;
+}
+
+.dock-cell {
+    -fx-border-width: 1;
+}
+
+.empty-dock {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #64748b;
+}
+
+.occupied-dock {
+    -fx-border-width: 2;
+}
+
+.channel-cell {
+    -fx-border-style: dashed;
+}
+
+.channel-empty {
+    -fx-text-fill: #64748b;
+}
+
+.inbound-channel {
+    -fx-background-color: #e8f2ff;
+    -fx-border-color: #60a5fa;
+}
+
+.outbound-channel {
+    -fx-background-color: #eef8ff;
+    -fx-border-color: #38bdf8;
+}
+
+.row-header {
+    -fx-background-color: #dbe4ef;
+    -fx-border-color: #94a3b8;
+    -fx-text-fill: #26364f;
+}
+
+.side-header {
+    -fx-background-color: #172033;
+    -fx-border-color: #172033;
+}
+
+.movement-cell {
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, rgba(15, 23, 42, 0.20), 8, 0.25, 0, 2);
+}
+
+.entering-cell {
+    -fx-background-color: #dcfce7;
+    -fx-border-color: #16a34a;
+    -fx-text-fill: #14532d;
+}
+
+.leaving-cell {
+    -fx-background-color: #fee2e2;
+    -fx-border-color: #dc2626;
+    -fx-text-fill: #7f1d1d;
+}
+
+.responding-cell {
+    -fx-background-color: #ffedd5;
+    -fx-border-color: #f97316;
+    -fx-text-fill: #7c2d12;
+}
+
+.container-vessel {
+    -fx-background-color: #d9f4f2;
+    -fx-border-color: #14b8a6;
+    -fx-text-fill: #115e59;
+}
+
+.cruise-vessel {
+    -fx-background-color: #f3e8ff;
+    -fx-border-color: #a855f7;
+    -fx-text-fill: #581c87;
+}
+
+.tanker-vessel {
+    -fx-background-color: #fff1d6;
+    -fx-border-color: #f59e0b;
+    -fx-text-fill: #78350f;
+}
+
+.government-vessel {
+    -fx-border-width: 3;
+}
+
+.details-panel {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cbd5e1;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 12;
+}
+
+.panel-title {
+    -fx-font-size: 15px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #172033;
+}
+
+.movement-cell.entering-cell {
+    -fx-background-color: #dcfce7;
+    -fx-border-color: #16a34a;
+    -fx-text-fill: #14532d;
+}
+
+.movement-cell.leaving-cell {
+    -fx-background-color: #fee2e2;
+    -fx-border-color: #dc2626;
+    -fx-text-fill: #7f1d1d;
+}
+
+.movement-cell.responding-cell {
+    -fx-background-color: #ffedd5;
+    -fx-border-color: #f97316;
+    -fx-text-fill: #7c2d12;
+}
