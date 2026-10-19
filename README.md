@@ -2,7 +2,7 @@
 
 **Opis projekta**
 
-**Port** je desktop aplikacija razvijena u programskom jeziku Java, u okviru predmeta Programski jezici 2 (PJ2) na Elektrotehničkom fakultetu Univerziteta u Banjoj Luci. Cilj projekta je razvoj aplikacije za upravljanje lukom i simulaciju pomorskog saobraćaja, uključujući kretanje plovila kroz plovne kanale, korišćenje vezova, upravljanje različitim tipovima plovila i obradu posebnih događaja tokom simulacije. Aplikacija se sastoji iz dva osnovna dijela: administratorskog dijela, namijenjenog upravljanju lukom i plovilima, i korisničkog dijela, namijenjenog simulaciji pomorskog saobraćaja.
+**Port** je desktop aplikacija razvijena u programskom jeziku Java, u okviru predmeta Programski jezici 2 na Elektrotehničkom fakultetu Univerziteta u Banjoj Luci. Cilj projekta je razvoj aplikacije za upravljanje lukom i simulaciju pomorskog saobraćaja, uključujući kretanje plovila kroz plovne kanale, korišćenje vezova, upravljanje različitim tipovima plovila i obradu posebnih događaja tokom simulacije. Aplikacija se sastoji iz dva osnovna dijela: administratorskog dijela, namijenjenog upravljanju lukom i plovilima, i korisničkog dijela, namijenjenog simulaciji pomorskog saobraćaja.
 
 **Funkcionalnosti**
 Prema specifikaciji projektnog zadatka, aplikacija obuhvata sljedeće funkcionalnosti:
